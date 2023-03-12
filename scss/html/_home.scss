@@ -1,0 +1,82 @@
+//estilos de sass
+@import"../utilidades/variables";
+@import"../utilidades/mixin";
+@import"../utilidades/extend";
+
+/*estilos del home*/
+
+//nesting
+
+header{
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-around;
+    background-color: $color-secundario;
+    nav{
+        display: inline-block;
+    }
+    ul{
+        list-style: none;
+        display: flex;
+        gap: 1rem;
+    }
+    li{
+        display: inline-block;
+    margin-left: 10px;
+    &:hover{
+        border-bottom: 1px solid whitesmoke;
+            font-weight: lighter;
+    }
+}
+    a{
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+    img{
+        width: 10%;
+        height: 20%;
+    }
+    }
+
+    body{
+        background-color: $color-principal;
+        main{
+            section{
+                div{
+                    .imagen{
+                        display: block;
+                         gap: 1rem;
+                         width: 500px;
+                        height: 250px;
+                        align-items: center;
+                        box-sizing: border-box;
+                        justify-content: center;
+                        transition: 0.5s;
+                        margin-left: auto;
+                        margin-right: auto;
+                        &:hover{
+                            transform: scale(1.1);
+                            opacity: 70%;
+                            transition: 0.5s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    footer{
+        background-color: rgb(189,205,214);
+    text-align: center;
+    margin-top: 40px;
+    img{
+        width: 5%;
+        box-sizing: border-box;
+    }
+    }
+
+
+ @include carousel-item   

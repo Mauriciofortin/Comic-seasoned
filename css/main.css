@@ -1,0 +1,178 @@
+/*reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier Prime', monospace;
+}
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@700&display=swap');
+
+/*estilos genericos*/
+body{
+    background:rgb(147,191,207)
+}
+
+/*estilos de home*/
+header{
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header nav{
+    display: inline-block;
+}
+header nav ul{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+header nav ul li{
+    display: inline-block;
+    margin-left: 10px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/*estilos de main*/
+.imagen{
+    display: block;
+    gap: 1rem;
+    width: 500px;
+    height: 250px;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: center;
+    transition: 0.5s;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.imagen:hover{
+    transform: scale(1.1);
+    opacity: 70%;
+    transition: 0.5s;
+    }
+
+    
+    header nav ul li :hover{
+        border-bottom: 1px solid whitesmoke;
+        font-weight: lighter;
+    }
+
+/*estilos de footer*/
+footer{
+    background-color: rgb(189,205,214);
+    text-align: center;
+    margin-top: 40px;
+}
+footer img{
+    width: 5%;
+    box-sizing: border-box;
+}
+
+.logo{
+    width: 10%;
+    height: 10%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/*estilos de secciones*/
+
+header{
+    background-color: rgb(96,150,180);
+    width: 100%;
+}
+header img{
+    width: 10%;
+    height: 20%;
+}
+header nav{
+    display: inline-block;
+}
+header nav ul{
+    list-style: none;
+}
+
+header nav ul li{
+    display: inline-block;
+}
+
+.carousel-item {
+    height: 50%;
+    width: 100%;
+    align-items: center;
+    min-height: 200px;
+    }
+  
+
+/*mq de tablet*/
+@media screen and (max-width:768px){
+    .imagen{
+        width: 100%;
+    }  
+    .carousel-item{
+        width: 100%;
+    }
+}
+   
+  /*mq de celulares*/
+  @media screen and(max-width:576px) {   
+
+ .imagen{
+        width: 100%;
+    }
+    .carousel-item{
+        width: 30%;
+    }
+}
+
+/*mq de pantallas pequeñas*/
+@media (max-width:375px) { 
+    header nav ul{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+
+    }  
+  .logo{
+    width: 50%;
+  }
+  
+    .imagen{
+           width: 100%;
+       }
+
+       .carousel-item{
+           width: 100%;
+           height: 100%;
+           
+       }
+
+
+       footer{
+        flex-direction: column;
+        width: 100%;
+        height:100%;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+
+       }
+    }
